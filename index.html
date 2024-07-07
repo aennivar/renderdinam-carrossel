@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Carrossel</title>
+</head>
+
+<body>
+    <!-- Cointainer do carrossel -->
+<div class="slideshow-container">
+
+    <!-- Imagens de largura total com número e legenda -->
+     <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/img1.jpg" style="width: 100%">
+        <div class="text">Legenda Um</div>
+     </div>
+
+     <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img/img2.jpg" style="width: 100%">
+        <div class="text">Legenda Dois</div>
+     </div>
+
+     <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img/img3.jpg" style="width: 100%">
+        <div class="text">Legenda Três</div>
+     </div>
+
+     <!-- Botões de "anterior" e "próximo" / Sinais de "<" e ">" -->
+      <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- Barra das bolas de seleção inferiores-->
+<div style="text-align: center">
+    <span class="bola" onclick="slideAtual(1)"></span>
+    <span class="bola" onclick="slideAtual(2)"></span>
+    <span class="bola" onclick="slideAtual(3)"></span>
+</div>
+</body>
+
+</html>
