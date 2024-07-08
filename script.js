@@ -13,7 +13,7 @@ function slideAtual(n) {
 
 function mostrarSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("meusSlides");
     let bolas = document.getElementsByClassName("bola");
     
     if (n > slides.length) {
@@ -27,8 +27,8 @@ function mostrarSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < bolas.length; i++) {
-        bolas[i].className = dots[i].className.replace(" active", "");
+        bolas[i].className = bolas[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    bolas[slideIndex-1].className += " active";
 }

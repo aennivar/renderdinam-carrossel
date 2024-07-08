@@ -12,13 +12,14 @@ img {
 }
 
 /* Container do carrossel */
-.slideshow-container {
+.container-carrossel {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-/* Esconde as imagens por padrão */
+/* Esconde as imagens por padrão
+    Isso aqui tá dando problema */
 .meusSlides {
     display: none;
 }
