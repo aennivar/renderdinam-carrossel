@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
 /* Container do carrossel */
 .slideshow-container {
     max-width: 1000px;
@@ -10,7 +19,7 @@
 }
 
 /* Esconde as imagens por padrão */
-.mySlides {
+.meusSlides {
     display: none;
 }
 
@@ -62,3 +71,36 @@
     position: absolute;
     top: 0;
 }
+
+/* Bolas de seleção inferiores */
+.bola {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.bola:hover {
+    background-color: #717171;
+}
+
+/* Animação de fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}  
