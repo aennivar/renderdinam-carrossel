@@ -11,6 +11,7 @@ function slideAtual(n) {
     mostrarSlides(slideIndex = n);
 }
 
+// Talvez o problema seja aqui
 function mostrarSlides(n) {
     let i;
     let slides = document.getElementsByClassName("meusSlides");
@@ -19,6 +20,7 @@ function mostrarSlides(n) {
     if (n > slides.length) {
         slideIndex = 1;
     }
+
     if (n < 1) {
         slideIndex.length = slides.length;
     }
